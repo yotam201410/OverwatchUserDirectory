@@ -1,2 +1,2 @@
 # Overwatch User API
- User class that has everey thing you can get from the overwath api
+User class that has everything you can get from the overwatch api
