@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="OverwatchUserDirectory",
-    version="1.0",
+    version="1.1",
     author="Yotam",
     author_email="yotam201410@gmail.com",
     description="An Overwatch user directory that gets everything you can take from Overwatch API using ovrstat(https://ovrstat.com) ",
