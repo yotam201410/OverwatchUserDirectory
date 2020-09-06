@@ -23,7 +23,8 @@ SOFTWARE.
 from OverwatchUserDirectory.ratings.Ratings import Ratings
 import requests
 from OverwatchUserDirectory.stats.stats import Stats
-
+class UserNotFound(Exception):
+    pass
 
 class User:
     def __init__(self, user: str):
@@ -51,14 +52,4 @@ class User:
                 self.competitiveStats = Stats(js["competitiveStats"])
             self.private = js["private"]
         except KeyError:
-            self.name = None
-            self.icon = None
-            self.levelIcon = None
-            self.endorsement = None
-            self.endorsementIcon = None
-            self.prestigeIcon = None
-            self.ratings = None
-            self.gamesWon = None
-            self.quickPlayStats = None
-            self.competitiveStats = None
-            self.private = None
+            raise UserNotFound
