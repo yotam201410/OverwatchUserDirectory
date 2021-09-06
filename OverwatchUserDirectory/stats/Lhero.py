@@ -2,6 +2,8 @@
 :copyright: (c) 2020 Yotam Rechnitz
 :license: MIT, see LICENSE for more details
 """
+
+
 class Lhero:
     def __init__(self, js: dict, hero: str):
         self.hero = hero

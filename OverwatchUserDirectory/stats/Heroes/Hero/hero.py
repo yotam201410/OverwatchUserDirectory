@@ -14,62 +14,48 @@ from OverwatchUserDirectory.stats.Heroes.Hero.miscellaneous import Miscellaneous
 
 class Hero:
     def __init__(self, js: dict, hero: str):
-        self.hero = hero
-        if js["assists"] is not None:
-            self._assists = Assists(js["assists"])
-        else:
-            self._assists = None
-        if js["average"] is not None:
-            self._average = Average(js["average"])
-        else:
-            self._average = None
-        if js["best"] is not None:
-            self._best = Best(js["best"])
-        else:
-            self._best = None
-        if js["combat"] is not None:
-            self._combat = Combat(js["combat"])
-        else:
-            self._combat = None
-        if js["game"] is not None:
-            self._game = Game(js["game"])
-        else:
-            self._game = None
-        if js["heroSpecific"] is not None:
-            self._heroSpecific = HeroSpecific(js["heroSpecific"], self.hero)
-        else:
-            self._heroSpecific = None
-        if js["matchAwards"] is not None:
-            self._matchAwards = MatchAwards(js["matchAwards"])
-        else:
-            self._matchAwards = None
-        if js["miscellaneous"] is not None:
-            self._miscellaneous = Miscellaneous(js["miscellaneous"])
+        self._hero = hero
+        self._assists = Assists(js["assists"]) if js["assists"] else None
+        self._average = Average(js["average"]) if js["average"] else None
+        self._best = Best(js["best"]) if js["best"] else None
+        self._combat = Combat(js["combat"]) if js["combat"] else None
+        self._game = Game(js["game"]) if js["game"] else None
+        self._heroSpecific = HeroSpecific(js["heroSpecific"], self.hero) if js["heroSpecific"] else None
+        self._matchAwards = MatchAwards(js["matchAwards"]) if js["matchAwards"] else None
+        self._miscellaneous = Miscellaneous(js["miscellaneous"]) if js["miscellaneous"] else None
 
     @property
-    def assists(self):
+    def hero(self) -> str:
+        return self._hero
+
+    @property
+    def assists(self) -> Assists:
         return self._assists
 
     @property
-    def average(self):
+    def average(self) -> Average:
         return self._average
 
     @property
-    def best(self):
+    def best(self) -> Best:
         return self._best
 
     @property
-    def combat(self):
+    def combat(self) -> Combat:
         return self._combat
 
     @property
-    def game(self):
+    def game(self) -> Game:
         return self._game
 
     @property
-    def matchAwards(self):
+    def matchAwards(self) -> MatchAwards:
         return self._matchAwards
 
     @property
-    def miscellaneous(self):
+    def miscellaneous(self) -> Miscellaneous:
         return self._miscellaneous
+
+    @property
+    def heroSpecific(self) -> HeroSpecific:
+        return self._heroSpecific
