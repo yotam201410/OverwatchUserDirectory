@@ -12,17 +12,17 @@ class Rate:
         self._rankIcon = js["rankIcon"]
 
     @property
-    def level(self):
+    def level(self) -> int:
         return self._level
 
     @property
-    def role(self):
+    def role(self) -> str:
         return self._role
 
     @property
-    def roleIcon(self):
+    def roleIcon(self) -> str:
         return self._roleIcon
 
     @property
-    def rankIcon(self):
+    def rankIcon(self) -> str:
         return self._rankIcon

@@ -2,25 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e39de0b-4df7-4303-9015-170548e2e937" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OverwatchUserDirectory/time/Time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/READNE.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OverwatchUserDirectory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OverwatchUserDirectory.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/ratings/Ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/ratings/Ratings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/Heroes/Hero/hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/Heroes/Hero/hero.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/ratings/rate.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/ratings/rate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/Lhero.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/Lhero.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/AllHeroes.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/AllHeroes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/assists.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/assists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/average.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/combat.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/combat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/matchAwards.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/matchAwards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/miscellaneous.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/allHeroes/miscellaneous.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/careerstats.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/careerstats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverwatchUserDirectory/stats/stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/OverwatchUserDirectory/stats/stats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Freeze Requirements File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,9 +53,73 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/python/python venv" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="Lhero" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OverwatchUserDirectory" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OverwatchUserDirectory/stats" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OverwatchUserDirectory/stats/Lhero.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OverwatchUserDirectory" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OverwatchUserDirectory/time" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OverwatchUserDirectory/time/Time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OverwatchUserDirectory" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OverwatchUserDirectory/stats" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OverwatchUserDirectory/stats/stats.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OverwatchUserDirectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,6 +144,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.Time" />
+        <item itemvalue="Python.stats" />
+        <item itemvalue="Python.Lhero" />
       </list>
     </recent_temporary>
   </component>
@@ -77,5 +163,17 @@
       <updated>1596566987994</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+with open("READNE.MD",'r') as f:
+    long_description = f.read()
 
 setuptools.setup(
     name="OverwatchUserDirectory",
-    version="1.3",
+    version="1.0",
     author="Yotam",
     author_email="yotam201410@gmail.com",
     description="An Overwatch user directory that gets everything you can take from Overwatch API using ovrstat(https://ovrstat.com) ",
@@ -17,5 +17,9 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3',
+    long_description=long_description,
+    python_requires='>=3.5',
+    install_requires=[
+        'requests>=2.25.1'
+    ]
 )

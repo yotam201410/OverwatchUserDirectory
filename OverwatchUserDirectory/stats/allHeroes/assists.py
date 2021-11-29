@@ -2,37 +2,27 @@
 :copyright: (c) 2020 Yotam Rechnitz
 :license: MIT, see LICENSE for more details
 """
+
+
 class Assists:
     def __init__(self, js: dict):
-        try:
-            self._defensive_assists = js["defensiveAssists"]
-        except KeyError:
-            self._defensive_assists = 0
-        try:
-            self._healing_done = js["healingDone"]
-        except KeyError:
-            self._healing_done = 0
-        try:
-            self._offensive_assists = js["offensiveAssists"]
-        except KeyError:
-            self._offensive_assists = 0
-        try:
-            self._recon_assists = js["reconAssists"]
-        except KeyError:
-            self._recon_assists = 0
+        self._defensive_assists = js["defensiveAssists"] if "defensiveAssists" in js else 0
+        self._healing_done = js["healing_done"] if "healing_done" in js else 0
+        self._offensive_assists = js["offensive_assists"] if "offensive_assists" in js else 0
+        self._recon_assists = js["recon_assists"] if "recon_assists" in js else 0
 
     @property
-    def defensive_assists(self):
+    def defensive_assists(self) -> int:
         return self._defensive_assists
 
     @property
-    def healing_done(self):
+    def healing_done(self) -> int:
         return self._healing_done
 
     @property
-    def offensive_assists(self):
+    def offensive_assists(self) -> int:
         return self._offensive_assists
 
     @property
-    def recon_assists(self):
+    def recon_assists(self) -> int:
         return self._recon_assists

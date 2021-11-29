@@ -2,45 +2,32 @@
 :copyright: (c) 2020 Yotam Rechnitz
 :license: MIT, see LICENSE for more details
 """
+
+
 class MatchAwards:
     def __init__(self, js: dict):
-        try:
-            self._cards = js["cards"]
-        except KeyError:
-            self._cards = 0
-        try:
-            self._medals = js["medals"]
-        except KeyError:
-            self._medals = 0
-        try:
-            self._medalsBronze = js["medalsBronze"]
-        except KeyError:
-            self._medalsBronze = 0
-        try:
-            self._medalsGold = js["medalsGold"]
-        except KeyError:
-            self._medalsGold = 0
-        try:
-            self._medalsSilver = js["medalsSilver"]
-        except KeyError:
-            self._medalsSilver = 0
+        self._cards = js["cards"] if "cards" in js else 0
+        self._medals = js["medals"] if "medals" in js else 0
+        self._medalsBronze = js["medalsBronze"] if "medalsBronze" in js else 0
+        self._medalsGold = js["medalsGold"] if "medalsGold" in js else 0
+        self._medalsSilver = js["medalsSilver"] if "medalsSilver" in js else 0
 
     @property
-    def cards(self):
+    def cards(self) -> int:
         return self._cards
 
     @property
-    def medals(self):
+    def medals(self) -> int:
         return self._medals
 
     @property
-    def medalsBronze(self):
+    def medalsBronze(self) -> int:
         return self._medalsBronze
 
     @property
-    def medalsGold(self):
+    def medalsGold(self) -> int:
         return self._medalsGold
 
     @property
-    def medalsSilver(self):
+    def medalsSilver(self) -> int:
         return self._medalsSilver

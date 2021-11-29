@@ -2,21 +2,18 @@
 :copyright: (c) 2020 Yotam Rechnitz
 :license: MIT, see LICENSE for more details
 """
+from OverwatchUserDirectory.time.Time import Time
+
+
 class Game:
     def __init__(self, js: dict):
-        try:
-            self._gamesWon = js["gamesWon"]
-        except KeyError:
-            self._gamesWon = 0
-        try:
-            self._timePlayed = js["timePlayed"]
-        except KeyError:
-            self._timePlayed = "0:0:0"
+        self._gamesWon = js["gamesWon"] if "gamesWon" in js else 0
+        self._timePlayed = Time(js["timePlayed"]) if "timePlayed" in js else Time()
 
     @property
-    def gamesWon(self):
+    def gamesWon(self) -> int:
         return self._gamesWon
 
     @property
-    def timePlayed(self):
+    def timePlayed(self) -> Time:
         return self._timePlayed

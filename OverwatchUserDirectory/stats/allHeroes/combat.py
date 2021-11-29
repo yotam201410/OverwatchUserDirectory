@@ -1,61 +1,24 @@
 """
-:copyright: (c) 2020 Yotam Rechnitz
+:copyright: (c) 2020-present Yotam Rechnitz
 :license: MIT, see LICENSE for more details
 """
+
+
 class Combat:
     def __init__(self, js: dict):
-        try:
-            self._barrierDamageDone = js["barrierDamageDone"]
-        except KeyError:
-            self._barrierDamageDone = 0
-        try:
-            self._damageDone = js["damageDone"]
-        except KeyError:
-            self._damageDone = 0
-        try:
-            self._deaths = js["deaths"]
-        except KeyError:
-            self._deaths = 0
-        try:
-            self._eliminations = js["eliminations"]
-        except KeyError:
-            self._eliminations = 0
-        try:
-            self._environmentalKills = js["environmentalKills"]
-        except KeyError:
-            self._environmentalKills = 0
-        try:
-            self._finalBlows = js["finalBlows"]
-        except KeyError:
-            self._finalBlows = 0
-        try:
-            self._heroDamageDone = js["heroDamageDone"]
-        except KeyError:
-            self._heroDamageDone = 0
-        try:
-            self._meleeFinalBlows = js["meleeFinalBlows"]
-        except KeyError:
-            self._meleeFinalBlows = 0
-        try:
-            self._multikills = js["multikills"]
-        except KeyError:
-            self._multikills = 0
-        try:
-            self._objectiveKills = js["objectiveKills"]
-        except KeyError:
-            self._objectiveKills = 0
-        try:
-            self._objectiveTime = js["objectiveTime"]
-        except KeyError:
-            self._objectiveTime = 0
-        try:
-            self._soloKills = js["soloKills"]
-        except KeyError:
-            self._soloKills = 0
-        try:
-            self._timeSpentOnFire = js["timeSpentOnFire"]
-        except KeyError:
-            self._timeSpentOnFire = 0
+        self._barrierDamageDone = js["barrierDamageDone"] if "barrierDamageDone" in js else 0
+        self._damageDone = js["damageDone"] if "damageDone" in js else 0
+        self._deaths = js["deaths"] if "deaths" in js else 0
+        self._eliminations = js["eliminations"] if "eliminations" in js else 0
+        self._environmentalKills = js["environmentalKills"] if "environmentalKills" in js else 0
+        self._finalBlows = js["finalBlows"] if "finalBlows" in js else 0
+        self._heroDamageDone = js["heroDamageDone"] if "heroDamageDone" in js else 0
+        self._meleeFinalBlows = js["meleeFinalBlows"] if "meleeFinalBlows" in js else 0
+        self._multikills = js["multiKills"] if "multiKills" in js else 0
+        self._objectiveKills = js["objectiveKills"] if "objectiveKills" in js else 0
+        self._objectiveTime = js["objectiveTime"] if "objectiveTime" in js else 0
+        self._soloKills = js["soloKills"] if "soloKills" in js else 0
+        self._timeSpentOnFire = js["timeSpentOnFire"] if "timeSpentOnFire" in js else 0
 
     @property
     def barrierDamageDone(self):

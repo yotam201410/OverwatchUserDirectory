@@ -7,17 +7,17 @@ from OverwatchUserDirectory.ratings.rate import Rate
 
 class Ratings:
     def __init__(self, js: list):
-        self.tank = None
-        self.support = None
-        self.damage = None
+        self._tank = None
+        self._support = None
+        self._damage = None
         if js:
             for role in js:
                 if role["role"] == "tank":
-                    self.tank = Rate(role)
+                    self._tank = Rate(role)
                 elif role["role"] == "damage":
-                    self.damage = Rate(role)
+                    self._damage = Rate(role)
                 elif role["role"] == "support":
-                    self.support = Rate(role)
+                    self._support = Rate(role)
         if self.tank is not None and self.damage is not None and self.support is not None:
             self._average_level = round(float(self.tank.level + self.damage.level + self.support.level) / 3)
         else:
@@ -26,3 +26,15 @@ class Ratings:
     @property
     def average_level(self) -> int:
         return self._average_level
+
+    @property
+    def tank(self) -> Rate:
+        return self._tank
+
+    @property
+    def support(self) -> Rate:
+        return self._support
+
+    @property
+    def damage(self) -> Rate:
+        return self._damage

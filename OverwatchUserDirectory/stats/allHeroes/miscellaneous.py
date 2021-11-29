@@ -2,21 +2,23 @@
 :copyright: (c) 2020 Yotam Rechnitz
 :license: MIT, see LICENSE for more details
 """
+
+
 class Miscellaneous:
     def __init__(self, js: dict):
         try:
-            self._teleporterPadsDestroyed = js["teleporterPadsDestroyed"]
+            self._teleporter_pads_destroyed = js["teleporterPadsDestroyed"]
         except KeyError:
-            self._teleporterPadsDestroyed = 0
+            self._teleporter_pads_destroyed = 0
         try:
-            self._turretsDestroyed = js["turretsDestroyed"]
+            self._turrets_destroyed = js["turretsDestroyed"]
         except KeyError:
-            self._turretsDestroyed = 0
+            self._turrets_destroyed = 0
 
     @property
-    def teleporterPadsDestroyed(self):
-        return self._teleporterPadsDestroyed
+    def teleporter_pads_destroyed(self) -> int:
+        return self._teleporter_pads_destroyed
 
     @property
-    def turretsDestroyed(self):
-        return self._turretsDestroyed
+    def turrets_destroyed(self) -> int:
+        return self._turrets_destroyed
